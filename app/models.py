@@ -35,7 +35,6 @@ class Movie(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField(blank=True, null=True)
     id = models.CharField(max_length=255, primary_key=True)
-    year = models.IntegerField()
     image = models.ImageField(upload_to='images/', blank=True, null=True)
     genre = models.CharField(max_length=255, blank=True, null=True)
     video = models.FileField(upload_to='videos/', blank=True, null=True)
