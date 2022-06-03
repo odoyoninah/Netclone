@@ -4,20 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netclone</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>NETCLONE</title>
 </head>
-<h1>NETCLONE</h1>
 <body>
 
-   {%for movie in popularMovies%} 
-   
-   {{movie.title}} 
-
+   {{movie.title}}
    <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/{{movie.poster_path}}" alt=""> 
-   <a href="details/{{movie.id}}">View More</a>
-   {%endfor%}
-    
-   
+   <iframe width="560" height="315" src="{{you_tube_url}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 </body>
 </html>
